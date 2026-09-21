@@ -2,15 +2,15 @@
    Cache simples para permitir instalação como PWA e uso básico offline.
    Não interfere no funcionamento do site caso o navegador não suporte PWA. */
 
-const CACHE_NAME = 'open-financing-cache-v1';
+const CACHE_NAME = 'open-financing-cache-v2';
+// Os ícones agora vão embutidos (base64) dentro do manifest.json e do index.html,
+// então não são mais arquivos separados — por isso não aparecem aqui.
 const APP_SHELL = [
   './',
   './index.html',
   './style.css',
   './script.js',
-  './manifest.json',
-  './assets/icons/icon-192.png',
-  './assets/icons/icon-512.png'
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
